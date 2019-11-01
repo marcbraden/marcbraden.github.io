@@ -1,5 +1,20 @@
 <html>
+<script>
+  function Game(guess){
+    var n=Math.ceil(Math.random() * 10);
+    if (n==guess){
+      return "Good guess!  You're right."
+    } else{
+      return "Wrong!  Try again."
+    }    
+    }
+  function interact(){
+    var number = window.prompt("Guess a number: ");
+    window.alert(Game(number));
+  </script>
 <body>
-Hi, this is Marc's page.
+  <p>Hi, this is Marc's page.</p>
+  <button onclick="interact()">Click me</button>
+  
 </body>
 </html>
